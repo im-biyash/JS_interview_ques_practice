@@ -11,3 +11,20 @@ const newarra = arr.map((element)=>{
     return element*element;
 })
 console.log(newarr);
+
+// what will be its output
+myFun();
+ var myFun = function(){
+    console.log("first")
+ }
+
+ myFun();
+
+ function myFun() {
+    console.log("second")
+ }
+ myFun();
+//  its output is
+// second
+// first
+// first
