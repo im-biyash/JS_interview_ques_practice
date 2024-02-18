@@ -76,3 +76,5 @@ console.log("End");
 // asynchropnous function goes to callback queue or  microtask queue
 // microtask queue has more priority than callback queue and promises always goes to micotask queue
 // therefore it gets executed first and then set time out that goes to callback queue
+
+//  but nowasys we use basically aysnc await instead of promises...
