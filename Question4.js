@@ -7,10 +7,16 @@ for(let i =0; i<arr.length; i++) {
     newarr.push(arr[i]*arr[i]);
 }
 console.log(newarr);
-const newarra = arr.map((element)=>{
+
+
+const newarr1 = arr.map((element)=>{
     return element*element;
 })
-console.log(newarr);
+console.log(newarr1);
+
+// we can also write in one line
+const newarr2 = arr.map((element)=>element*element)     . 
+console.log(newarr2);
 
 // what will be its output
 myFun();

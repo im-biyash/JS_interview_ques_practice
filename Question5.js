@@ -78,3 +78,4 @@ console.log("End");
 // therefore it gets executed first and then set time out that goes to callback queue
 
 //  but nowasys we use basically aysnc await instead of promises...
+
