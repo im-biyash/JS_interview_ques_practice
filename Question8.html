@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #cards_container {
+        background-color: rgb(213, 213, 213);
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .user-card {
+        width: 400px;
+        height: 150px; /* Adjust the height as needed */
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 8px;
+        box-sizing: border-box;
+        box-shadow: 0cqh;
+        display: flex;
+        flex-direction: column; /* Set to column layout */
+        justify-content: center;
+        background-color: bisque;
+      }
+      h2,
+      h3 {
+        margin-bottom: 10px;
+      }
+      .user-card:hover {
+        background-color: azure;
+        transform: perspective(1000px) rotateY(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="cards_container"></div>
+    </div>
+
+    <script>
+      let fetchData = async () => {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await res.json();
+        console.log(data);
+        let cards_container = document.getElementById("cards_container");
+
+        data.map((element) => {
+          let userCard = document.createElement("div");
+          userCard.classList.add("user-card");
+
+          let h2 = document.createElement("h2");
+          let h3 = document.createElement("h3");
+          let p = document.createElement("p");
+          h2.innerHTML = element.name;
+          h3.innerHTML = element.email;
+          p.innerHTML = element.address.city;
+
+          userCard.append(h2);
+          userCard.append(h3);
+          userCard.append(p);
+
+          cards_container.append(userCard);
+        });
+      };
+      fetchData();
+    </script>
+  </body>
+</html>
