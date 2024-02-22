@@ -1,4 +1,3 @@
-
 // Explain about var let and const
 // scope
 
@@ -17,7 +16,7 @@
 //         let name = "Biyash";
 //         const sname = "shrestha";
 //     }
-//     console.log("my name is" + name + "" + sname); 
+//     console.log("my name is" + name + "" + sname);
 //     //  here let and var must e defeind in block scope
 // // }
 // modJs(true);
@@ -35,14 +34,14 @@
 //     var bestcoder = "Harry";
 //     console.log(bestcoder);
 // }
-// console.log(bestcoder)   
+// console.log(bestcoder)
 // output:Harry
 
 let bestcoder = "hitesh";
-if(true){
-    let bestcoder = "Harry";
-    console.log(bestcoder);
+if (true) {
+  let bestcoder = "Harry";
+  console.log(bestcoder);
 }
-console.log(bestcoder)  
+console.log(bestcoder);
 // output:harry hitesh
-// outside block 
+// outside block so
