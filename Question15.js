@@ -20,7 +20,7 @@
 
 // it is applicable in object
 // WE CAN clone object using spread
-// clone(shadow clone)
+
 // const obj = {
 //     name: "Biyash",
 //     age: 23,
@@ -35,3 +35,13 @@ function sum(num1, num2, ...rest) {
 }
 
 console.log(sum(2, 3, 5, 6, 7));
+
+
+// Rest operator in function parameters
+function displayInfo(name, age, ...hobbies) {
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("Hobbies:", hobbies.join(" "));
+}
+
+displayInfo("Biyash", 23, "Reading");
