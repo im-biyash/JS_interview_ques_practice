@@ -11,3 +11,10 @@ const newNumber = [4, 5, 6];
 const allNumber = [100,...oldNumber, ...newNumber,200];
 console.log(allNumber);
 
+// string
+const string = "Biyash";
+let newstring = [...string];
+console.log(newstring);
+let capitalize = newstring[0].toUpperCase() + newstring.slice(1).join('');
+console.log(capitalize);
+
