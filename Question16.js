@@ -22,4 +22,4 @@ function hello1() {
 }
 let c = hello1();
 c();
-// output will be 
+// output will be biyash we can change the name
