@@ -17,7 +17,7 @@ function hello1() {
   function hello2() {
     console.log("hello2" + message);
   }
-  message = "biyash"
+ var message = "biyash"
   return hello2;
 }
 let c = hello1();
