@@ -18,14 +18,14 @@
 
 // multiplyByTwo(nums);
 
-// function multiplyByTwo(obj){
-//     for(key in obj){
-//       if( typeof obj[key]=== "number"){
-//         obj[key] *= 2;
+function multiplyByTwo(obj){
+    for(key in obj){
+      if( typeof obj[key]=== "number"){
+        obj[key] *= 2;
 
-//       }
-//     }
-// }
+      }
+    }
+}
 // console.log(nums);
 const user = {
     name: 'biyash',
@@ -38,3 +38,5 @@ console.log(strobj);
 
 const parsobj  = JSON.parse(strobj);   
 console.log(parsobj);
+
+
